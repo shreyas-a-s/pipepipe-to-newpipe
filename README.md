@@ -19,5 +19,5 @@ It is. Suppose sometime in future PipePipe stops gettings any more updates (let'
 ## What this script does
 - Rename the column display_index in 'playlists' table to is_thumbnail_permanent
 - Update all values in the renamed column to 0
-- Delete the column display_index
+- Delete the column display_index in 'remote_playlists' table
 
