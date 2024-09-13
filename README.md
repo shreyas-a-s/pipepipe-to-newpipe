@@ -13,7 +13,7 @@ It is. Suppose sometime in future PipePipe stops gettings any more updates (let'
 - Place it and the script (either pipepipe-to-newpipe.py or pipepipe-to-newpipe.sh) in same folder
 - Execute the script (either by `./pipepipe-to-newpipe.py` or `./pipepipe-to-newpipe.sh`)
 - Copy NewPipe.zip back to phone
-- Import database to NewPipe (Settings > Content > Import database)
+- Import database to NewPipe (Settings > Backup and restore > Import database)
 - Good to go
 
 ## What this script does
