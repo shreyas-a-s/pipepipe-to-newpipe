@@ -6,7 +6,7 @@ if which apt-get > /dev/null; then
 fi
 
 # Open the zip file and extract contents
-unzip PipePipe.zip
+unzip -o PipePipe.zip
 
 # Connect to the SQLite database
 sqlite3 newpipe.db <<EOF
