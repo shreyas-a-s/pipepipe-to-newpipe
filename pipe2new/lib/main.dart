@@ -42,22 +42,29 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
   String _message = "Select zip file exported from PipePipe";
 
   void _addZipFile() async {
-    FilePickerResult? result = await FilePicker.platform.pickFiles();
+    String message = "";
+    FilePickerResult? result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['zip'],
+    );
 
     if (result != null) {
-      File file = File(result.files.single.path!);
-      for (var element in result!.files) {
-        print(element.name);
+      if (result.files.single.extension == 'zip') {
+        File file = File(result.files.single.path!);
+        print(result.files.single.name);
+        message = 'Selected file is: ${result.files.single.name}';
+      } else {
+        message = "You have selected ${result.files.single.extension}. Only zip files are allowed";
       }
     } else {
-      print("No file selected");
+      message = "No file selected";
     }
+
     setState(() {
-      _counter++;
+      _message = message;
     });
   }
 
@@ -74,10 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               '$_message'
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
