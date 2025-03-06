@@ -1,5 +1,8 @@
 ## Convert PipePipe database to work with NewPipe
 
+> [!NOTE]
+> For those who would like to convert the database on the phone itself, do checkout the all new [pipe2new](https://github.com/shreyas-a-s/pipe2new) flutter app that I have developed.
+
 ## Motivation to create this project
 [PipePipe](https://github.com/InfinityLoop1308/PipePipe) is a fork of [NewPipe](https://github.com/TeamNewPipe/NewPipe) which is snappier and less buggy compared to the original one (in my opinion). But one thing that bothered me was that if we export the db from PipePipe and import it to NewPipe, the app would crash and won't launch.
 
