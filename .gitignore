@@ -1,2 +1,50 @@
 NewPipe.zip
 PipePipe.zip
+
+## FLUTTER
+
+# Miscellaneous
+pipe2new/*.class
+pipe2new/*.log
+pipe2new/*.pyc
+pipe2new/*.swp
+pipe2new/.DS_Store
+pipe2new/.atom/
+pipe2new/.build/*
+pipe2new/.buildlog/*
+pipe2new/.history*
+pipe2new/.svn/*
+pipe2new/.swiftpm/*
+pipe2new/migrate_working_dir/*
+
+# IntelliJ related
+pipe2new/*.iml
+pipe2new/*.ipr
+pipe2new/*.iws
+pipe2new/.idea/*
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+pipe2new/**/doc/api/*
+pipe2new/**/ios/Flutter/.last_build_id
+pipe2new/.dart_tool/*
+pipe2new/.flutter-plugins
+pipe2new/.flutter-plugins-dependencies
+pipe2new/.pub-cache/*
+pipe2new/.pub/*
+pipe2new/build/*
+
+# Symbolication related
+pipe2new/app.*.symbols
+
+# Obfuscation related
+pipe2new/app.*.map.json
+
+# Android Studio will place build artifacts here
+pipe2new/android/app/debug
+pipe2new/android/app/profile
+pipe2new/android/app/release
